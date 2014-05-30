@@ -1,0 +1,11 @@
+import time
+import webbrowser
+
+break_limit = 3
+breaks = 0
+
+print("This program started on" + time.ctime())
+while(breaks < break_limit):
+    time.sleep(10)
+    webbrowser.open("http://feedly.com/#my")
+    breaks += 1
